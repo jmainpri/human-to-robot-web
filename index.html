@@ -78,6 +78,9 @@
 				</div>
 			</div>
 		</div>
+
+
+        <!-- START TOP MENU --------------------- -->
 		<div class="top-menu">
 			<div class="container">
 				<div class="row">
@@ -107,6 +110,11 @@
 				
 			</div>
 		</div>
+        <!-- END TOP MENU --------------------- -->
+
+
+
+
 	</nav>
 
 	<header id="fh5co-header" class="fh5co-cover" role="banner" 
@@ -124,7 +132,9 @@
                                Machine Learning & Robotics Lab</a>.
                                We are based in Stuttgart University 
                                and the 
-                               <a href="https://is.tuebingen.mpg.de/">Max Planck Institute for Intelligent Systems</a> in Tübingen, which are both in Baden-Württemberg, Germany.
+                               <a href="https://is.tuebingen.mpg.de/">Max Planck Institute 
+                               for Intelligent Systems</a> in Tübingen, which are both in 
+                               Baden-Württemberg, Germany.
                                </p>
                                </font>
 							<p><a href="about.html" class="btn btn-primary btn-lg with-arrow">View our team</a></p>
@@ -134,6 +144,20 @@
 						</div>
 					</div>
 				</div>
+                <div class="col-md-4">
+                    <div class="display-t">
+                        <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                              <h2><strong>We are hiering! </strong></h2>
+                             <font color="#fff">
+                               <li>One Post-doc position open</li>
+                               <li>Two PhD student positions open</li>
+                               <a href="about.html">Checkout the offers</a>
+                                for more information.
+                               </p>
+                               </font>
+                        </div>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</header>
@@ -142,11 +166,8 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-
-
-
 					<h2>Research</h2>
-					<p>Our research focuses on human and robot motion understanding.
+					<p align="justify">Our research focuses on human and robot motion understanding.
                     In this context, we develop techniques able to transfer motion skills
                     from humans to robots. Our main application domain is service and collaborative
                     robotics, for which the notion of socially appropriate motion is key.</p>
@@ -202,41 +223,41 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Our Latest Work</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<h2>Our Projects</h2>
+					<!-- <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p> -->
 				</div>
 			</div>
 		</div>
 		<div class="project-content">
+            <div class="col-forth">
+                <div class="project animate-box" style="background-image:url(images/project-human-robot.jpg);">
+                    <a href="#project-human-robot" class="desc">
+                        <span>Project</span>
+                        <h3>Human-Robot Collaboration</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-forth">
+                <div class="project animate-box" style="background-image:url(images/project-human-movement.jpg);">
+                    <a href="#project-human-movement" class="desc">
+                        <span>Project</span>
+                        <h3>Human Movement Understanding</h3>
+                    </a>
+                </div>
+            </div>
 			<div class="col-forth">
-				<div class="project animate-box" style="background-image:url(images/project-8.jpg);">
-					<a href="#" class="desc">
-						<span>Application</span>
-						<h3>Project Name</h3>
+				<div class="project animate-box" style="background-image:url(images/project-ioc.png);">
+					<a href="#project-ioc" class="desc">
+						<span>Project</span>
+						<h3>Inverse Optimal Control</h3>
 					</a>
 				</div>
 			</div>
 			<div class="col-forth">
-				<div class="project animate-box" style="background-image:url(images/project-1.jpg);">
-					<a href="#" class="desc">
-						<span>Application</span>
-						<h3>Project Name</h3>
-					</a>
-				</div>
-			</div>
-			<div class="col-forth">
-				<div class="project animate-box" style="background-image:url(images/project-2.jpg);">
-					<a href="#" class="desc">
-						<span>Application</span>
-						<h3>Project Name</h3>
-					</a>
-				</div>
-			</div>
-			<div class="col-forth">
-				<div class="project animate-box" style="background-image:url(images/project-3.jpg);">
-					<a href="#" class="desc">
-						<span>Application</span>
-						<h3>Project Name</h3>
+				<div class="project animate-box" style="background-image:url(images/project-motion-optimization.png);">
+					<a href="#project-motion-optimization" class="desc">
+						<span>Project</span>
+						<h3>Motion Optimization</h3>
 					</a>
 				</div>
 			</div>
@@ -244,7 +265,57 @@
 	</div>
 
 
+ <div id="fh5co-project">
 
+
+    <div class="container" id="project-human-robot">
+        <div class="row animate-box">
+           <div class="col-md-8 col-md-offset-2 text-justified fh5co-heading">
+             <h2>Human-Robot Collaboration</h2>
+                    <p align="justify">
+                    We have developed a framework that allows a human and a robot to perform simultaneous manipulation tasks safely in close proximity. The proposed framework is based on early prediction of the human's motion. The prediction system, which builds on previous work in the area of gesture recognition, generates a prediction of human workspace occupancy by computing the swept volume of learned human motion trajectories. The motion planner then plans robot trajectories that minimize a penetration cost in the human workspace occupancy while interleaving planning and execution. Multiple plans are computed in parallel, one for each robot task available at the current time, and the trajectory with the least cost is selected for execution. We test our framework in simulation using recorded human motions and a simulated PR2 robot. Our results show that our framework enables the robot to avoid the human while still accomplishing the robot's task, even in cases where the initial prediction of the human's motion is incorrect. We also show that taking into account the predicted human workspace occupancy in the robot's motion planner leads to safer and more efficient interactions between the user and the robot than only considering the human's current configuration. [IROS13, Video]
+                    </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="project-human-movement">
+        <div class="row animate-box">
+           <div class="col-md-8 col-md-offset-2 text-justified fh5co-heading">
+             <h2>Human Movement Understanding</h2>
+                    <p align="justify">
+                    To enable safe and efficient human-robot collaboration in shared workspaces it is important for the robot to predict how a human will move when performing a task. While predicting human motion for tasks not known a priori is very challenging, we argue that single-arm reaching motions for known tasks in collaborative settings (which are especially relevant for manufacturing) are indeed predictable. Two hypotheses underlie our approach for predicting such motions: First, that the trajectory the human performs is optimal with respect to an unknown cost function, and second, that human adaptation to their partner's motion can be captured well through iterative re-planning with the above cost function. 
+                    The key to our approach is thus to learn a cost function which "explains'' the motion of the human. To do this, we gather example trajectories from pairs of participants performing a collaborative assembly task using motion capture. We then use Inverse Optimal Control to learn a cost function from these trajectories. 
+                    Finally, we predict reaching motions from the human's current configuration to a task-space goal region by iteratively re-planning a trajectory using the learned cost function. Our planning algorithm is based on the trajectory optimizer STOMP, it plans for a 23 DoF human kinematic model and accounts for the presence of a moving collaborator and obstacles in the environment. Our results suggest that in most cases, our method outperforms baseline methods when predicting motions. We also show that our method outperforms baselines for predicting human motion when a human and a robot share the workspace.  [TRO16, ICRA15, Video]
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="project-ioc">
+        <div class="row animate-box">
+           <div class="col-md-8 col-md-offset-2 text-justified fh5co-heading">
+             <h2>Inverse Optimal Control</h2>
+                    <p align="justify">
+                    Inverse Reinforcement Learning (IRL) has been studied for more that 15 years and is of fundamental importance in robotics. It allows learning a utility function "explaining'' the behavior of an agent, and can thus be used for imitation or prediction of a given behavior by having solely access to demonstrated optimal or near optimal solutions. In this paper, we extend the IRL LEARning to SearCH (LEARCH) framework to train Convolutional Neural Networks (CNNs) using functional manifold projections, which we denote Deep-LEARCH. Earlier work on functional gradient approaches built large but flat additive models that continually grow in size. Our technique maintains the convergence advantage of functional gradient techniques (observed in linear spaces) while generalizing to fixed sized deep parametric models (CNN) by formally representing the function approximator as a non-linear sub-manifold of the space of all functions. We derive a simple step-project functional gradient descent method to walk across the manifold that is substantially more data efficient than traditional gradient steps consisting of a single back-propagation commonly used in Deep-IRL. We present preliminary experimental results showing higher-training rates on low-dimensional 2D synthetic data. We believe these ideas have broad implications for structured training beyond IRL as well as deep learning training in general. [WS-NIPS-16]
+                    </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="project-motion-optimization">
+        <div class="row animate-box">
+           <div class="col-md-8 col-md-offset-2 text-justified fh5co-heading">
+             <h2>Motion Optimization</h2>
+                    <p align="justify">
+                    Motion optimization is a special brand of motion planning technique which generally consists of continuously bending the trajectory into a better solution. They are local methods as they seek to ameliorate the solution by descending the gradient of some objective function, and thus they typically suffer from getting trapped in local minima. However, by leveraging the optimization literature, and by pulling-back a model of the environment in the configuration space of the robot (in the Riemannian sense), it is now possible to solve motion planning problems with motion optimization for 7DoFs manipulators in cluttered workspaces within the order of a second and additionally perform continuous motion optimization with replanning steps under a second, allowing the behaviors demonstrated in the video. [IROS16, Presentation]
+                    </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -302,7 +373,7 @@
 	</div> -->
 
 
-	<div id="fh5co-started">
+<!-- 	<div id="fh5co-started">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -316,13 +387,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
-
-
-
 
 <!-- 			<div class="row row-pb-md">
 				<div class="col-md-4 fh5co-widget">
