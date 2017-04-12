@@ -42,6 +42,8 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Academic icons -->
+    <link rel="stylesheet" href="css/academicons.css"/>
 
 	<!-- Owl Carousel  -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -68,12 +70,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-right">
-						<p class="num">Call: +01 123 456 7890</p>
+						<!-- <p class="num">Call: +01 123 456 7890</p> -->
 						<ul class="fh5co-social">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
+                            <li><a target="_blank" href="https://scholar.google.com/citations?user=ToU9KBUAAAAJ&hl=en">
+                            <i class="ai ai-google-scholar-square ai-3x"></i></a></li>
+
+                            <li><a target="_blank" href="https://www.researchgate.net/profile/Jim_Mainprice">
+                            <i class="ai ai-researchgate ai-3x"></i></a></li>
+                            
+                            <li><a target="_blank" href="https://www.linkedin.com/in/jim-mainprice-4b29481b/">
+                            <i class="icon-linkedin"></i></a></li>
+                        </ul>
 					</div>
 				</div>
 			</div>
@@ -86,20 +93,11 @@
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
-							<!-- <li class="active"><a href="index.html">Home</a></li> -->
-							<li><a href="work.html">Work</a></li>
-							<li><a href="about.html">About</a></li>
-							<li class="has-dropdown">
-								<a href="services.html">Services</a>
-								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
-								</ul>
-							</li>
-							<li class="active"><a href="contact.html">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
+                            <!-- <li class="active"><a href="index.html">Home</a></li> -->
+                            <li><a href="index.html">Research</a></li>
+                            <li><a href="about.html">The team</a></li>
+                            <li><a href="work.html">Publications</a></li>
+                            <li class="active"><a href="contact.html">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -108,7 +106,7 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_2.jpg);">
+	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/background.png);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -116,7 +114,7 @@
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Contact Us</h1>
-							<h2>Free HTML5 Bootstrap Template Made by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a></h2>
+							<h2>We are within an hour from Stuttgart airport</h2>
 						</div>
 					</div>
 				</div>
@@ -132,45 +130,52 @@
 					<div class="fh5co-contact-info">
 						<h3>Contact Information</h3>
 						<ul>
-							<li class="address">198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-							<li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
-							<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-							<li class="url"><a href="http://gettemplates.co">gettemplates.co</a></li>
+							<li class="address"><a target="_blank" href="https://www.google.de/maps/place/Universit%C3%A4tsstra%C3%9Fe+38,+70569+Stuttgart/data=!4m2!3m1!1s0x4799dc68ea629aa5:0x30ffa51a2c5817ff?sa=X&ved=0ahUKEwiJ2sXm9J7TAhUCVRoKHXfuCrUQ8gEIGTAA">Universitätsstraße 38,<br> 70569 Stuttgart, Germany</a></li>
+							<li class="phone"><a href="tel://+4971168588383">+49 711 685 88383</a></li>
+							<li class="email"><a href="mailto:Jim.Mainprice@ipvs.uni-stuttgart.de">  Jim.Mainprice@ipvs.uni-stuttgart.de</a></li>
+							<li class="url"><a target="_blank" href="https://www.ipvs.uni-stuttgart.de/index1.html?__locale=en">
+                            ipvs.uni-stuttgart.de</a></li>
+                            <li class="url"><a target="_blank" href="https://is.tuebingen.mpg.de/">is.tuebingen.mpg.de</a></li>
 						</ul>
 					</div>
 
 				</div>
-				<div class="col-md-6 animate-box">
+                <div class="col-md-6 animate-box">
+                    <img src="images/logo-USt.jpg" alt="University of Stuttgart logo" style="width:40%">
+                    <img src="images/logo-MPI.png" alt="Max Planck Institute logo" style="width:40%"> <!--  style="width:304px;height:228px;" -->
+                </div>
+
+<!-- 				<div class="col-md-6 animate-box">
 					<h3>Get In Touch</h3>
 					<form action="#">
 						<div class="row form-group">
 							<div class="col-md-6">
-								<!-- <label for="fname">First Name</label> -->
+								<label for="fname">First Name</label>
 								<input type="text" id="fname" class="form-control" placeholder="Your firstname">
 							</div>
 							<div class="col-md-6">
-								<!-- <label for="lname">Last Name</label> -->
+								<label for="lname">Last Name</label>
 								<input type="text" id="lname" class="form-control" placeholder="Your lastname">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
-								<!-- <label for="email">Email</label> -->
+								<label for="email">Email</label>
 								<input type="text" id="email" class="form-control" placeholder="Your email address">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
-								<!-- <label for="subject">Subject</label> -->
+								<label for="subject">Subject</label>
 								<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
-								<!-- <label for="message">Message</label> -->
+								<label for="message">Message</label>
 								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
 							</div>
 						</div>
@@ -178,14 +183,16 @@
 							<input type="submit" value="Send Message" class="btn btn-primary">
 						</div>
 
-					</form>		
-				</div>
+					</form>
+				</div> -->
+
+
 			</div>
 			
 		</div>
 	</div>
 
-	<div id="fh5co-started">
+<!-- 	<div id="fh5co-started">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -199,11 +206,11 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<footer id="fh5co-footer" role="contentinfo">
-		<div class="container">
-			<div class="row row-pb-md">
+		<div class="container"> 
+ 		<!--	<div class="row row-pb-md">
 				<div class="col-md-4 fh5co-widget">
 					<h3>A Little About Run.</h3>
 					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
@@ -238,22 +245,27 @@
 						<li><a href="#">API</a></li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
-					<p>
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
-					</p>
+
 					<p>
 						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
+                            <li><a target="_blank" href="https://scholar.google.com/citations?user=ToU9KBUAAAAJ&hl=en">
+                            <i class="ai ai-google-scholar-square ai-3x"></i></a></li>
+
+                            <li><a target="_blank" href="https://www.researchgate.net/profile/Jim_Mainprice">
+                            <i class="ai ai-researchgate ai-3x"></i></a></li>
+                            
+                            <li><a target="_blank" href="https://www.linkedin.com/in/jim-mainprice-4b29481b/">
+                            <i class="icon-linkedin"></i></a></li>
+                        </ul>
 					</p>
+                    <p>
+                        <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
+                        <small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+                    </p>
 				</div>
 			</div>
 
