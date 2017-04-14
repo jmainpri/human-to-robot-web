@@ -3,11 +3,11 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Run &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+	<title>HRM Research Group</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="freehtml5.co" />
+	<meta name="description" content="Humans to Robots Research Group" />
+	<meta name="keywords" content="Stuttgart University Robotics Research Group Max Planck for Intelligent Systems" />
+	<meta name="author" content="Jim Mainprice" />
 
 	<!-- 
 	//////////////////////////////////////////////////////
@@ -199,7 +199,7 @@
                                     <i class="icon-air-play"></i>
                                 </span> -->
                                 <h3>Human-Robot Manipulation</h3>
-                                We design robotic software frameworks that account expliclty for the humans in 
+                                We design robotic software frameworks that account explicitly for the humans in 
                                 close proximity by introducing predictive and mimicking capacities.
                             </div>
                         </div>
@@ -222,7 +222,7 @@
                                     <i class="icon-laptop"></i>
                                 </span> -->
                                 <h3>Motion Planning</h3>
-                                We devise algorithms to autonoumously generate robotic motions in 
+                                We devise algorithms to autonomously generate robotic motions in 
                                 geometrically complex, uncertain and dynamic workspaces.
                             </div>
                         </div>
@@ -242,10 +242,18 @@
 		</div>
 		<div class="project-content">
             <div class="col-forth">
-                <div class="project animate-box" style="background-image:url(images/project-human-robot.png);">
-                    <a href="#project-human-robot" class="desc">
+                <div class="project animate-box" style="background-image:url(images/project-ioc.png);">
+                    <a href="#project-ioc" class="desc">
                         <span>Project</span>
-                        <h3>Human-Robot Collaboration</h3>
+                        <h3>Inverse Optimal Control</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-forth">
+                <div class="project animate-box" style="background-image:url(images/project-motion-optimization.png);">
+                    <a href="#project-motion-optimization" class="desc">
+                        <span>Project</span>
+                        <h3>Motion Optimization</h3>
                     </a>
                 </div>
             </div>
@@ -257,88 +265,19 @@
                     </a>
                 </div>
             </div>
-			<div class="col-forth">
-				<div class="project animate-box" style="background-image:url(images/project-ioc.png);">
-					<a href="#project-ioc" class="desc">
-						<span>Project</span>
-						<h3>Inverse Optimal Control</h3>
-					</a>
-				</div>
-			</div>
-			<div class="col-forth">
-				<div class="project animate-box" style="background-image:url(images/project-motion-optimization.png);">
-					<a href="#project-motion-optimization" class="desc">
-						<span>Project</span>
-						<h3>Motion Optimization</h3>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="col-forth">
+                <div class="project animate-box" style="background-image:url(images/project-human-robot.png);">
+                    <a href="#project-human-robot" class="desc">
+                        <span>Project</span>
+                        <h3>Human-Robot Collaboration</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
  <div id="fh5co-project">
-
-
-    <div class="container" id="project-human-robot">
-        <div class="row animate-box">
-           <div class="col-md-8 col-md-offset-2 text-justified fh5co-heading">
-             <h2>Human-Robot Collaboration</h2>
-                <p align="justify">
-                    We have developed a framework that allows a human and a robot to perform simultaneous 
-                    manipulation tasks safely in close proximity. The proposed framework is based on early 
-                    prediction of the human's motion. The prediction system, which builds on previous work 
-                    in the area of gesture recognition, generates a prediction of human workspace occupancy 
-                    by computing the swept volume of learned human motion trajectories. The motion planner then 
-                    plans robot trajectories that minimize a penetration cost in the human workspace occupancy 
-                    while interleaving planning and execution. Multiple plans are computed in parallel, one for 
-                    each robot task available at the current time, and the trajectory with the least cost is 
-                    selected for execution. We test our framework in simulation using recorded human motions and 
-                    a simulated PR2 robot. Our results show that our framework enables the robot to avoid the human 
-                    while still accomplishing the robot's task, even in cases where the initial prediction of the 
-                    human's motion is incorrect. We also show that taking into account the predicted human workspace 
-                    occupancy in the robot's motion planner leads to safer and more efficient interactions between 
-                    the user and the robot than only considering the human's current configuration. [IROS13, Video]
-                </p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container" id="project-human-movement">
-        <div class="row animate-box">
-           <div class="col-md-8 col-md-offset-2 text-justified fh5co-heading">
-             <h2>Human Movement Understanding</h2>
-                <p align="justify">
-                    To enable safe and efficient human-robot collaboration in shared 
-                    workspaces it is important for the robot to predict how a human will 
-                    move when performing a task. While predicting human motion for tasks 
-                    not known a priori is very challenging, we argue that single-arm reaching 
-                    motions for known tasks in collaborative settings (which are especially 
-                    relevant for manufacturing) are indeed predictable. Two hypotheses underlie 
-                    our approach for predicting such motions: First, that the trajectory the human 
-                    performs is optimal with respect to an unknown cost function, and second, that 
-                    human adaptation to their partner's motion can be captured well through iterative 
-                    re-planning with the above cost function. 
-                    </p>
-                    <p align="justify">
-                    The key to our approach is thus to learn a cost function which "explains'' the 
-                    motion of the human. To do this, we gather example trajectories from pairs of 
-                    participants performing a collaborative assembly task using motion capture. We then 
-                    use Inverse Optimal Control to learn a cost function from these trajectories. 
-                    Finally, we predict reaching motions from the human's current configuration to a 
-                    task-space goal region by iteratively re-planning a trajectory using the learned cost 
-                    function. Our planning algorithm is based on the trajectory optimizer STOMP, it plans 
-                    for a 23 DoF human kinematic model and accounts for the presence of a moving collaborator 
-                    and obstacles in the environment. Our results suggest that in most cases, our method 
-                    outperforms baseline methods when predicting motions. We also show that our method 
-                    outperforms baselines for predicting human motion when a human and a robot share the workspace.
-                    [TRO16, ICRA15, Video]
-                    </p>
-                </p>
-            </div>
-        </div>
-    </div>
 
     <div class="container" id="project-ioc">
         <div class="row animate-box">
@@ -358,14 +297,13 @@
                     low-level features. These stem from sensory feeds such as visual or tactile sensor feeds, 
                     which are of inherently high-dimensional. Thus the problems we consider are continuous
                     with high dimensional action and very high-dimensional feature spaces.
-                    We investigate using deep function approximators to model these sensor feeds,
+                    In this project we investigate using deep function approximators to model these sensor feeds,
                     for which Convolutional Neural Networks (CNNs) are particular well suited especially
                     for modelling the workspace geometry.
                 </p>
             </div>
         </div>
     </div>
-
 
     <div class="container" id="project-motion-optimization">
         <div class="row animate-box">
@@ -391,6 +329,57 @@
             </div>
         </div>
     </div>
+
+    <div class="container" id="project-human-robot">
+        <div class="row animate-box">
+           <div class="col-md-8 col-md-offset-2 text-justified fh5co-heading">
+             <h2>Human-Robot Collaboration</h2>
+                <p align="justify">
+                    Humans exhibit incredible manipulation capabilities in terms 
+                    of reactivity and coordination regarding other humans in the environments.
+                    Achieving such human level performances with robots requires acquiring 
+                    predictive models of human behavior, while constantly integrating high 
+                    dimensional sensor feeds at multiple time scales. 
+                </p>
+                <p align="justify">
+                    Conceptualizing such control 
+                    architectures, able to account explicitly for the human partner is both challenging 
+                    and of fundamental importance in robotics because it attempts to identify and implement 
+                    the subtlety of what humans expect from robot motion when in close proximity.
+                    This project aims to characterize and evaluate empirically "human-aware"
+                    control architectures by introducing human evaluation in the loop.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="project-human-movement">
+        <div class="row animate-box">
+           <div class="col-md-8 col-md-offset-2 text-justified fh5co-heading">
+             <h2>Human Movement Understanding</h2>
+                <p align="justify">
+                    Although the underlying principles of human motion have been 
+                    investigated in terms of muscle activation and neural activity, 
+                    we have little understanding of full-body motion generation in dynamic, 
+                    cluttered environments and especially in presence of social and physical 
+                    interaction.
+                    </p>
+                    <p align="justify">
+                    Understanding human motion requires the collaboration of researchers 
+                    from many fields of science (e.g., cognitive science, neuroscience, biomechanics). 
+                    A lot of research has sought to understand human motion amidst obstacles.
+                    However, no global mathematical theory exists describing how the different sensor streams are 
+                    consumed by the CNS to generate behavior. This project primarly aims
+                    at understanding how humans model their surounding, in terms of static geometry or 
+                    other humans, by making use of inverse optimal control as the primary technique
+                    of investigation.
+                    </p>
+                </p>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 
