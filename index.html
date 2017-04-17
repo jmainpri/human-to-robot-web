@@ -184,7 +184,7 @@
 					<p align="justify">
                     Our research tries to uncover the principles of human and robot motion.
                     In this context, we develop <b>artificial intelligence</b> and 
-                    <b>machine learning</b> techniques able to implement motion skills, and transfer
+                    <b>machine learning</b> techniques able to implement motion skills and transfer
                     behaviors from humans to robots. Our main application domains 
                     are service and collaborative robotics for which the notion of socially 
                     appropriate motion is key.</p>
@@ -300,11 +300,11 @@
                     characterizing human motion principles, we are investigating IOC algorithms
                     that can construct utility functions from
                     low-level features. These stem from sensory feeds such as visual or tactile sensor feeds, 
-                    which are of inherently high-dimensional. Thus the problems we consider are continuous
-                    with high-dimensional action and very high-dimensional feature spaces.
-                    In this project we investigate using deep function approximators to model these sensor feeds,
-                    for which Convolutional Neural Networks (CNNs) are particular well suited especially
-                    for modeling the workspace geometry.
+                    which are inherently high-dimensional. Thus the problems we consider are continuous in state and action,
+                    with high-dimensional action spaces and very high-dimensional feature spaces.
+                    In this project we investigate using deep function approximators to model the utility functions,
+                    for which Convolutional Neural Networks (CNNs) are particular well suited, especially
+                    for modeling utility in the workspace geometry.
                 </p>
             </div>
         </div>
@@ -317,13 +317,12 @@
                     <p align="justify">
                     Motion optimization is a special brand of motion planning techniques which 
                     generally consists of continuously bending the trajectory into a better solution. 
-                    They are local methods as they seek to ameliorate the solution by descending 
-                    the gradient of some objective function, and thus they typically suffer from 
-                    getting trapped in local minima. 
+                    Motion optimization are generally viewed as local methods as they seek to ameliorate 
+                    the solution by leveraging the gradient of the objective function, 
+                    and thus they typically suffer from getting trapped in local minima.
                     </p>
                     <p align="justify">
-                    However, by leveraging the optimization literature, 
-                    and by pulling-back a model of the environment in the configuration space of 
+                    However, by pulling-back a model of the environment in the configuration space of 
                     the robot (in the Riemannian sense), it is now possible to solve motion planning 
                     problems with motion optimization for 7DoFs manipulators in cluttered workspaces 
                     within the order of a second. We are working in collaboration with 
