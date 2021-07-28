@@ -523,22 +523,29 @@
    <div id="fh5co-started">
         <div class="container">
             <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2 text-justified fh5co-heading" id="bachelor-thesis-offer-1">
+                <div class="col-md-8 col-md-offset-2 text-justified fh5co-heading" id="tamp-thesis-offer">
                     <h2>Bachelor Thesis Offer</h2>
                     <p><b>
-                    Title:  Gaze based intent prediction for human robot
-collaboration using Neural Networks
+                    Title: Task and Motion Planning for Collaborative Robots
                     </b></p>
                     <p>
+                    In this thesis, you will tackle the problem of human-robot coordination in sequences of manipulation tasks. The approach integrates hierarchical human motion prediction with Task and Motion Planning (TAMP).
+                    <br><br>
+                    You will first devise a motion prediction system for long-term tasks using hierarchical inverse optimal control. You will assess the efficacy of the approach by training the prediction algorithms and test the framework on the publicly available MoGaze dataset [1]. 
+                    <br><br>
+                    In a second step, you will integrate a dynamic version of the TAMP algorithm Logic-Geometric Programming (LGP) [2] on the Pepper robot available at our lab. Our version of Dynamic LGP [3], replans periodically to handle the mismatch between the human motion prediction and the actual human behavior.
+                    <br><br>
+                    Inverse optimal control (a.k.a. inverse reinforcement learning) is the process of deriving a reward function from observed behavior. Recent work mainly focuses on solving one task and therefore only one global reward function is learned. However, human motion generally consists of multiple low-level tasks which have to be performed in a defined order or in parallel in order to achieve a high-level task. For example, making pizza dough consists of several low-level tasks, such as, measuring water, adding yeast, measuring flour, etc, In this project, the student will investigate the problem of hierarchical inverse reinforcement learning, which aims to learn multiple reward functions for low-level tasks, together with a latent state space representation to encode the higher-level task objective based on human demonstrations of full body motion performing the high-level task.
+                    <br><br>
+                    This master thesis will be based at the Machine Learning and Robotics Lab of the University of Stuttgart and jointly supervised by Dr. Jim Mainprice and Ms. Philipp Kratzer.
 
-                        For highly dynamic interactions between humans and robots, it is important to foresee what actions a human will do next. Anticipating human activities can enable assistive robots to plan ahead and respond to the human in a faster and safer way. While recent work mainly focuses on motion data, one aspect of this thesis will be to investigate whether taking the gaze of the human into account leads to better prediction performances.
-                        <br><br>
-                        In this thesis the student will design a neural network framework to pre-dict the intent of the human. The student will capture an example dataset using an eye tracker and a motion capture system in our Lab. Then several state of the art machine learning techniques will be trained and compared using the captured data.
-                        <br><br> 
-                        Good programming skills and basic machine learning knowledge are re-quired. Implementation will be done with python and tensorflow.
-                        <br><br>
-                        This master thesis will be based at the Machine Learning and Robotics Lab of the University of Stuttgart and jointly supervised by Dr. Jim Mainprice and Ms. Philipp Kratzer.
-                        </p>
+
+                    [1] Kratzer, P., Bihlmaier, S., Midlagajni, N. B., Prakash, R., Toussaint, M., & Mainprice, J. (2020). Mogaze: A dataset of full-body motions that includes workspace geometry and eye-gaze. IEEE Robotics and Automation Letters, 6(2), 367-373.
+                    <br><br>
+                    [2] Toussaint, M. (2015, June). Logic-geometric programming: An optimization-based approach to combined task and motion planning. In Twenty-Fourth International Joint Conference on Artificial Intelligence.
+                    <br><br>
+                    [3] Le, A. T., Kratzer, P., Hagenmayer, S., Toussaint, M., & Mainprice, J. (2021). Hierarchical Human-Motion Prediction and Logic-Geometric Programming for Minimal Interference Human-Robot Tasks. arXiv preprint arXiv:2104.08137.
+                    <br><br>
 
                         Links:
                         <font color="#888">
@@ -552,6 +559,59 @@ collaboration using Neural Networks
                         <li><a href="https://sites.google.com/site/jimmainprice"> Dr. Jim Mainprice (HRM)</a>
                         </li>
 
+                        <li><a href="https://arxiv.org/pdf/2104.08137.pdf"> Dynamic LGP paper</a>
+                        </li>
+
+                        <li><a href="https://www.softbankrobotics.com/emea/en/pepper">Pepper robot</a>
+                        </li>
+
+                        <br>
+                        <p>
+                        <div class="row animate-box">
+                            <div class="col-md-8 col-md-offset-2 text-center">
+                              <p><a href="mailto:hrm.jobs@ipvs.uni-stuttgart.de" 
+                              class="btn btn-default btn-lg">Apply</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="fh5co-started">
+        <div class="container">
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 text-justified fh5co-heading" id="master-thesis-offer-2">
+                    <h2>Thesis Offer</h2>
+                    <p><b>
+                    Title:  Learning robotic reactive behavior from human demonstration via dynamic behavior trees
+                    </b></p>
+                    <p>
+                        Robot Learning from Demonstration (LfD) of complex tasks is usually performed in the context of Hierarchical Task Network (HTN) or Markov Decision Processes. While these approaches can be successful, it only allows the robot to reason in terms of sequential planning. The selected candidate will investigate a new method for LfD problems, which models the human demonstrations using dynamic behavior trees. This new paradigm would allow a robot to reason not only in terms of task accomplishment, but also in terms of sensory motor couplings to implement behaviors at runtime. The resulting reactivity would increase the robustness and liveliness of the robot.
+                        <br><br>
+                        The student will develop a framework extending the Playful scripting language for learning behavior trees. After an initial phase using synthetic demonstrations the student will develop an approach for learning demonstrations using data recorded using the OptiTrack motion capture and Motive body tracker present in our Lab in Stuttgart. The learned behavior will be tested on the baxter robot, which already integrates the Playful framework. The selected candidate must have excellent working knowledge of machine learning and python, as well as a motivation to test his work on a real working robot. A good knowledge of ROS is a plus.
+                        <br><br>
+                        This master thesis will be based between the Machine Learning and Robotics Lab of the University of Stuttgart and the Max Planck Institute for Intelligent Systems in Stuttgart and jointly supervised by Dr. Jim Mainprice and Dr. Vincent Berenz.
+                        </p>
+
+                        Links:
+                        <font color="#888">
+
+                        <li><a href="https://ipvs.informatik.uni-stuttgart.de/mlr/">Machine Learning and Robotics Lab</a> 
+                        </li>
+
+                        <li><a href="https://ipvs.informatik.uni-stuttgart.de/mlr/HRM/">Humans to Robots Motion (HRM) group</a>
+                        </li>
+
+                        <li><a href="https://www.is.mpg.de/de/publications/playful">Playful</a>
+                        </li>
+
+                        <li><a href="https://sites.google.com/site/jimmainprice"> Dr. Jim Mainprice (HRM)</a>
+                        </li>
+
+                        <li><a href="https://www.is.mpg.de/de/employees/vberenz"> Dr. Vincent Berenz (Max Planck Institute for Intelligent Systems)</a>
+                        </li>
 
                         <br>
                         <p>
